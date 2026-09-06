@@ -424,9 +424,145 @@
             <!-- Grid 6 Phòng Ban -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 font-sans">
 
-                <!-- Department 1: OMNI (WITH 5 HORIZONTAL IMAGE SLIDER) -->
-                <div class="bg-white rounded-2xl p-5 sm:p-6 shadow-soft-card border border-beige-border hover:border-gold/60 transition-all flex flex-col justify-between">
-                    <div>
+                <!-- Department 1: RETAIL MKT -->
+                <div class="bg-white rounded-2xl p-5 sm:p-6 shadow-soft-card border border-beige-border hover:border-gold/60 transition-all flex flex-col justify-between h-full">
+                    <div class="flex-none">
+                        <div class="flex items-center gap-3 mb-4 pb-3 border-b border-beige-border">
+                            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-gold text-white flex items-center justify-center font-bold shadow-sm shrink-0">
+                                <i class="fa-solid fa-store text-base sm:text-lg"></i>
+                            </div>
+                            <h3 class="font-sans font-bold text-navy text-base sm:text-lg tracking-wide">RETAIL MKT</h3>
+                        </div>
+                        <div class="space-y-2.5 text-xs sm:text-sm text-slate-700 min-h-[120px] sm:min-h-[140px]">
+                            <p class="font-semibold text-slate-800">ADAPT CÁC HẠNG MỤC CHƯƠNG TRÌNH YOUTH U35</p>
+                            <ul class="space-y-1.5 list-disc list-inside text-slate-600 leading-relaxed">
+                                <li>Bộ POSM, asset digital chạy ads online</li>
+                                <li>Adapt KV CT YOUTH U35 từng sub-brand</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="flex-1 relative group mt-4 pt-3 bg-beige-subtle/80 rounded-2xl p-2 border border-beige-border overflow-hidden shadow-inner flex flex-col justify-center">
+                        <div id="retailMktSlider" class="flex gap-2 overflow-x-auto scroll-smooth no-scrollbar snap-x snap-mandatory rounded-xl">
+                            <!-- Slide 1: Mancode & Arta -->
+                            <div class="snap-center shrink-0 w-full flex gap-2">
+                                <div class="flex-1 rounded-xl overflow-hidden border border-beige-border/60 shadow-xs bg-white aspect-[3/4]">
+                                    <img src="mancode_Youth_master_KV-v1.jpg" alt="Mancode KV" class="w-full h-full object-cover" onerror="this.src='mancode_Youth_master_KV-v1.png';">
+                                </div>
+                                <div class="flex-1 rounded-xl overflow-hidden border border-beige-border/60 shadow-xs bg-white aspect-[3/4]">
+                                    <img src="ARTA Mặt trc.png" alt="Arta KV" class="w-full h-full object-cover" onerror="this.src='ARTA Mặt trc.png';">
+                                </div>
+                            </div>
+                            
+                            <!-- Slide 2: Disney & Style -->
+                            <div class="snap-center shrink-0 w-full flex gap-2">
+                                <div class="flex-1 rounded-xl overflow-hidden border border-beige-border/60 shadow-xs bg-white aspect-[3/4]">
+                                    <img src="REtail_KV_DISNEY.jpg" alt="Disney KV" class="w-full h-full object-cover" onerror="this.src='REtail_KV_DISNEY.png';">
+                                </div>
+                                <div class="flex-1 rounded-xl overflow-hidden border border-beige-border/60 shadow-xs bg-white aspect-[3/4]">
+                                    <img src="REtail_Mica-Style-1.jpg" alt="Style KV" class="w-full h-full object-cover" onerror="this.src='REtail_Mica-Style-1.png';">
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <!-- Left Arrow Button -->
+                        <button onclick="slideCarousel('retailMktSlider', 'left')" aria-label="Previous Slide" class="absolute left-3 top-1/2 -translate-y-1/2 bg-navy/85 hover:bg-navy text-white w-8 h-8 rounded-full flex items-center justify-center shadow-md backdrop-blur-sm transition-all duration-200 hover:scale-110 active:scale-95 z-10">
+                            <i class="fa-solid fa-chevron-left text-xs"></i>
+                        </button>
+                        <!-- Right Arrow Button -->
+                        <button onclick="slideCarousel('retailMktSlider', 'right')" aria-label="Next Slide" class="absolute right-3 top-1/2 -translate-y-1/2 bg-navy/85 hover:bg-navy text-white w-8 h-8 rounded-full flex items-center justify-center shadow-md backdrop-blur-sm transition-all duration-200 hover:scale-110 active:scale-95 z-10">
+                            <i class="fa-solid fa-chevron-right text-xs"></i>
+                        </button>
+                    </div>
+
+                    <div class="flex-none mt-3 pt-2 border-t border-beige-border/60">
+                        <div class="aspect-video w-full rounded-xl overflow-hidden border border-beige-border shadow-xs bg-white">
+                            <video src="U35 (vuong) 16mb.mp4" controls autoplay loop muted playsinline class="w-full h-full object-contain rounded-xl"></video>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Department 2: TT KDQT -->
+                <div class="bg-white rounded-2xl p-5 sm:p-6 shadow-soft-card border border-beige-border hover:border-gold/60 transition-all flex flex-col justify-between h-full">
+                    <div class="flex-none">
+                        <div class="flex items-center gap-3 mb-4 pb-3 border-b border-beige-border">
+                            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-navy text-white flex items-center justify-center font-bold shadow-sm shrink-0">
+                                <i class="fa-solid fa-users text-base sm:text-lg"></i>
+                            </div>
+                            <h3 class="font-sans font-bold text-navy text-base sm:text-lg tracking-wide">TT KDQT</h3>
+                        </div>
+                        <div class="space-y-2.5 text-xs sm:text-sm text-slate-700 min-h-[120px] sm:min-h-[140px]">
+                            <p class="font-semibold text-slate-800">THIẾT KẾ VISUAL CHO NHÃN DISNEY:</p>
+                            <ul class="space-y-1.5 list-disc list-inside text-slate-600 leading-relaxed">
+                                <li>Bộ nhẫn cưới Wedding — Disney × PNJ “The Fairytale Love”</li>
+                                <li>Gifting - in process</li>                               
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="flex-1 relative group mt-4 pt-3 bg-beige-subtle/80 rounded-2xl p-2 border border-beige-border overflow-hidden shadow-inner flex flex-col justify-center">
+                        <div id="khcsSlider" class="flex gap-2 overflow-x-auto scroll-smooth no-scrollbar snap-x snap-mandatory rounded-xl h-full min-h-[380px] sm:min-h-[420px]">
+                            <!-- Slide 1 -->
+                            <div class="snap-center shrink-0 w-full h-full rounded-xl overflow-hidden border border-beige-border/60 shadow-xs bg-white">
+                                <img src="DN KV-MAster.jpg" alt="DN KV Master" class="w-full h-full object-cover object-top" onerror="this.src='DN KV-MAster.png';">
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="snap-center shrink-0 w-full h-full rounded-xl overflow-hidden border border-beige-border/60 shadow-xs bg-white">
+                                <img src="DN beauty and the beast.jpg" alt="Beauty and the Beast" class="w-full h-full object-cover object-top" onerror="this.src='DN beauty and the beast.png';">
+                            </div>
+                            <!-- Slide 3 -->
+                            <div class="snap-center shrink-0 w-full h-full rounded-xl overflow-hidden border border-beige-border/60 shadow-xs bg-white">
+                                <img src="DN LITTLE MERMAID.jpg" alt="Little Mermaid" class="w-full h-full object-cover object-top" onerror="this.src='DN LITTLE MERMAID.png';">
+                            </div>
+                            <!-- Slide 4 -->
+                            <div class="snap-center shrink-0 w-full h-full rounded-xl overflow-hidden border border-beige-border/60 shadow-xs bg-white">
+                                <img src="DN Rapounzel.jpg" alt="Rapunzel" class="w-full h-full object-cover object-top" onerror="this.src='DN Rapounzel.png';">
+                            </div>
+                        </div>
+
+                        <!-- Left Arrow Button -->
+                        <button onclick="slideCarousel('khcsSlider', 'left')" aria-label="Previous Slide" class="absolute left-3 top-1/2 -translate-y-1/2 bg-navy/85 hover:bg-navy text-white w-8 h-8 rounded-full flex items-center justify-center shadow-md backdrop-blur-sm transition-all duration-200 hover:scale-110 active:scale-95 z-10">
+                            <i class="fa-solid fa-chevron-left text-xs"></i>
+                        </button>
+                        <!-- Right Arrow Button -->
+                        <button onclick="slideCarousel('khcsSlider', 'right')" aria-label="Next Slide" class="absolute right-3 top-1/2 -translate-y-1/2 bg-navy/85 hover:bg-navy text-white w-8 h-8 rounded-full flex items-center justify-center shadow-md backdrop-blur-sm transition-all duration-200 hover:scale-110 active:scale-95 z-10">
+                            <i class="fa-solid fa-chevron-right text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Department 3: CX-CS -->
+                <div class="bg-white rounded-2xl p-5 sm:p-6 shadow-soft-card border border-beige-border hover:border-gold/60 transition-all flex flex-col justify-between h-full">
+                    <div class="flex-none">
+                        <div class="flex items-center gap-3 mb-4 pb-3 border-b border-beige-border">
+                            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-crimson text-white flex items-center justify-center font-bold shadow-sm shrink-0">
+                                <i class="fa-solid fa-heart text-base sm:text-lg"></i>
+                            </div>
+                            <h3 class="font-sans font-bold text-navy text-base sm:text-lg tracking-wide">CX - CS</h3>
+                        </div>
+                        <div class="space-y-2.5 text-xs sm:text-sm text-slate-700 min-h-[120px] sm:min-h-[140px]">
+                            <p class="font-semibold text-crimson uppercase">Thiết kế POP UP và THƯ CẢM ƠN thông tin về "GOOD NEW" CHO WEBSITE VÀ ZALO</p>
+                            <ul class="space-y-1.5 list-disc list-inside text-slate-600 leading-relaxed"></ul>                               
+                        </div>
+                    </div>
+                    
+                    <div class="flex-1 mt-4 pt-3 bg-beige-subtle/80 rounded-2xl p-2 border border-beige-border shadow-inner flex flex-col gap-2 justify-center min-h-[380px] sm:min-h-[420px]">
+                        <!-- Image 1: Zalo Goodnews (Trên) -->
+                        <div class="flex-1 w-full rounded-xl overflow-hidden border border-beige-border/60 shadow-xs bg-white">
+                            <img src="zalo goodnews.jpg" alt="Zalo Goodnews" class="w-full h-full object-cover object-center" onerror="this.src='zalo goodnews.png';">
+                        </div>
+                        
+                        <!-- Image 2: Thư cảm ơn (Dưới) -->
+                        <div class="flex-1 w-full rounded-xl overflow-hidden border border-beige-border/60 shadow-xs bg-white">
+                            <img src="thucamon 2.png" alt="Thư cảm ơn 2" class="w-full h-full object-cover object-center" onerror="this.src='thucamon 2.png';">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Department 4: OMNI -->
+                <div class="bg-white rounded-2xl p-5 sm:p-6 shadow-soft-card border border-beige-border hover:border-gold/60 transition-all flex flex-col justify-between h-full">
+                    <div class="flex-none">
                         <div class="flex items-center gap-3 mb-4 pb-3 border-b border-beige-border">
                             <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-gold text-white flex items-center justify-center font-bold shadow-sm shrink-0">
                                 <i class="fa-solid fa-bullseye text-base sm:text-lg"></i>
@@ -444,8 +580,7 @@
                         </div>
                     </div>
 
-                    <!-- 5 Horizontal Banner Slider for OMNI MKT -->
-                    <div class="relative group mt-4 pt-3 bg-beige-subtle/80 rounded-2xl p-2 border border-beige-border overflow-hidden shadow-inner">
+                    <div class="flex-1 relative group mt-4 pt-3 bg-beige-subtle/80 rounded-2xl p-2 border border-beige-border overflow-hidden shadow-inner flex flex-col justify-center">
                         <div id="omniMktSlider" class="flex gap-2 overflow-x-auto scroll-smooth no-scrollbar snap-x snap-mandatory rounded-xl">
                             <!-- Image 1: Ngày đôi 8.8 -->
                             <div class="snap-center shrink-0 w-full aspect-[1200/628] rounded-xl overflow-hidden border border-beige-border/60 shadow-xs bg-white">
@@ -479,8 +614,7 @@
                         </button>
                     </div>
 
-                    <!-- 2 Parallel Videos Grid (1080x1350 aspect ratio 4:5) -->
-                    <div class="grid grid-cols-2 gap-2 mt-3 pt-2 border-t border-beige-border/60">
+                    <div class="flex-none grid grid-cols-2 gap-2 mt-3 pt-2 border-t border-beige-border/60">
                         <div class="aspect-[4/5] w-full rounded-xl overflow-hidden border border-beige-border shadow-xs bg-black/5">
                             <video src="NGAY DOI T8 (1080x1350)_12mb.mp4" controls autoplay loop muted playsinline class="w-full h-full object-cover rounded-xl"></video>
                         </div>
@@ -490,96 +624,9 @@
                     </div>
                 </div>
 
-                <!-- Department 2: TTQT -->
-                <div class="bg-white rounded-2xl p-5 sm:p-6 shadow-soft-card border border-beige-border hover:border-gold/60 transition-all flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center gap-3 mb-4 pb-3 border-b border-beige-border">
-                            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-navy text-white flex items-center justify-center font-bold shadow-sm shrink-0">
-                                <i class="fa-solid fa-users text-base sm:text-lg"></i>
-                            </div>
-                            <h3 class="font-sans font-bold text-navy text-base sm:text-lg tracking-wide">TTQT</h3>
-                        </div>
-                        <div class="space-y-2.5 text-xs sm:text-sm text-slate-700 min-h-[120px] sm:min-h-[140px]">
-                            <p class="font-semibold text-slate-800">66 KV, poster cho các CT (Khối / sub - brand):</p>
-                            <ul class="space-y-1.5 list-disc list-inside text-slate-600 leading-relaxed">
-                                <li>THI ĐUA NỘI BỘ (MANCODE, ARTA, STYLE, TTQT, ...)</li>
-                                <li>KHEN THƯỞNG (CHƯƠNG TRÌNH HỘI AN)</li>
-                                <li>POSTER THÔNG BÁO</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- 5 Horizontal Banner Slider for TTQT -->
-                    <div class="relative group mt-4 pt-3 bg-beige-subtle/80 rounded-2xl p-2 border border-beige-border overflow-hidden shadow-inner">
-                        <div id="khcsSlider" class="flex gap-2 overflow-x-auto scroll-smooth no-scrollbar snap-x snap-mandatory rounded-xl">
-                            <!-- Image 1: Hellokitty T6 -->
-                            <div class="snap-center shrink-0 w-full aspect-[1200/628] rounded-xl overflow-hidden border border-beige-border/60 shadow-xs bg-white">
-                                <img src="KHCS-CTTĐ Hellokitty T6.jpg" alt="KHCS-CTTĐ Hellokitty T6" class="w-full h-full object-cover" onerror="this.src='KHCS-CTTĐ Hellokitty T6.png';">
-                            </div>
-                            <!-- Image 2: Trendy T6 -->
-                            <div class="snap-center shrink-0 w-full aspect-[1200/628] rounded-xl overflow-hidden border border-beige-border/60 shadow-xs bg-white">
-                                <img src="KHCS-CTTĐ Trendy T6.jpg" alt="KHCS-CTTĐ Trendy T6" class="w-full h-full object-cover" onerror="this.src='KHCS-CTTĐ Trendy T6.png';">
-                            </div>
-                            <!-- Image 3: Brand 7-8 -->
-                            <div class="snap-center shrink-0 w-full aspect-[1200/628] rounded-xl overflow-hidden border border-beige-border/60 shadow-xs bg-white">
-                                <img src="KHCS-CTTĐ Brand 7-8.jpg" alt="KHCS-CTTĐ Brand 7-8" class="w-full h-full object-cover" onerror="this.src='KHCS-CTTĐ Brand 7-8.png';">
-                            </div>
-                            <!-- Image 4: Poster Mancode T6 -->
-                            <div class="snap-center shrink-0 w-full aspect-[1200/628] rounded-xl overflow-hidden border border-beige-border/60 shadow-xs bg-white">
-                                <img src="KHCS-Poster Mancode T6.jpg" alt="KHCS-Poster Mancode T6" class="w-full h-full object-cover" onerror="this.src='KHCS-Poster Mancode T6.png';">
-                            </div>
-                            <!-- Image 5: VOC Award3 -->
-                            <div class="snap-center shrink-0 w-full aspect-[1200/628] rounded-xl overflow-hidden border border-beige-border/60 shadow-xs bg-white">
-                                <img src="KHCS-CTTĐ VOC Award3.jpg" alt="KHCS-CTTĐ VOC Award3" class="w-full h-full object-cover" onerror="this.src='KHCS-CTTĐ VOC Award3.png';">
-                            </div>
-                        </div>
-
-                        <!-- Left Arrow Button -->
-                        <button onclick="slideCarousel('khcsSlider', 'left')" aria-label="Previous Slide" class="absolute left-3 top-1/2 -translate-y-1/2 bg-navy/85 hover:bg-navy text-white w-8 h-8 rounded-full flex items-center justify-center shadow-md backdrop-blur-sm transition-all duration-200 hover:scale-110 active:scale-95 z-10">
-                            <i class="fa-solid fa-chevron-left text-xs"></i>
-                        </button>
-                        <!-- Right Arrow Button -->
-                        <button onclick="slideCarousel('khcsSlider', 'right')" aria-label="Next Slide" class="absolute right-3 top-1/2 -translate-y-1/2 bg-navy/85 hover:bg-navy text-white w-8 h-8 rounded-full flex items-center justify-center shadow-md backdrop-blur-sm transition-all duration-200 hover:scale-110 active:scale-95 z-10">
-                            <i class="fa-solid fa-chevron-right text-xs"></i>
-                        </button>
-                    </div>
-
-                    <!-- Vinh danh Hội An image bottom section -->
-                    <div class="mt-3 pt-2 border-t border-beige-border/60">
-                        <div class="aspect-[164/100] w-full rounded-xl overflow-hidden border border-beige-border shadow-xs bg-white flex items-center justify-center">
-                            <img src="Vinh danh Hoi An.png" alt="Vinh danh Hoi An" class="w-full h-full object-contain p-1 rounded-xl" onerror="this.src='KHCS.jpg';">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Department 3: CLHH -->
-                <div class="bg-white rounded-2xl p-5 sm:p-6 shadow-soft-card border border-beige-border hover:border-gold/60 transition-all flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center gap-3 mb-4 pb-3 border-b border-beige-border">
-                            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-crimson text-white flex items-center justify-center font-bold shadow-sm shrink-0">
-                                <i class="fa-solid fa-award text-base sm:text-lg"></i>
-                            </div>
-                            <h3 class="font-sans font-bold text-navy text-base sm:text-lg tracking-wide">CLHH</h3>
-                        </div>
-                        <div class="space-y-2.5 text-xs sm:text-sm text-slate-700 min-h-[120px] sm:min-h-[140px]">
-                            <p class="font-semibold text-slate-800 uppercase">THIẾT KẾ VÀ SẢN XUẤT CÁC HẠNG MỤC:</p>
-                            <ul class="space-y-1.5 list-disc list-inside text-slate-600 leading-relaxed">
-                                <li>E - BROCHURE Chương Trình YOUTH CAMPAIGN (in process)</li>
-                                <li>SẢN XUẤT VIDEO ONSITE (Air 91 sku, 92 sku in process)</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="mt-4 pt-3 bg-beige-subtle/80 rounded-2xl p-2 border border-beige-border shadow-inner">
-                        <div class="h-[380px] sm:h-[420px] overflow-y-auto w-full rounded-xl border border-beige-border/60 bg-white">
-                            <img src="E catalog.png" alt="E-Brochure Catalog CLHH" class="w-full h-auto block" onerror="this.src='E catalog.jpg';">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Department 4: PNS -->
-                <div class="bg-white rounded-2xl p-5 sm:p-6 shadow-soft-card border border-beige-border hover:border-gold/60 transition-all flex flex-col justify-between">
-                    <div>
+                <!-- Department 5: PNS -->
+                <div class="bg-white rounded-2xl p-5 sm:p-6 shadow-soft-card border border-beige-border hover:border-gold/60 transition-all flex flex-col justify-between h-full">
+                    <div class="flex-none">
                         <div class="flex items-center gap-3 mb-4 pb-3 border-b border-beige-border">
                             <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-navy text-white flex items-center justify-center font-bold shadow-sm shrink-0">
                                 <i class="fa-solid fa-gem text-base sm:text-lg"></i>
@@ -592,8 +639,8 @@
                             <p class="text-slate-600">CÁC ĐỐI TÁC NGÂN HÀNG, F&B, GIFTZONE...</p>
                         </div>
                     </div>
-                    <!-- 4 Horizontal Banner Slider for PNS -->
-                    <div class="relative group mt-4 pt-3 bg-beige-subtle/80 rounded-2xl p-2 border border-beige-border overflow-hidden shadow-inner">
+                    
+                    <div class="flex-1 relative group mt-4 pt-3 bg-beige-subtle/80 rounded-2xl p-2 border border-beige-border overflow-hidden shadow-inner flex flex-col justify-center">
                         <div id="pnsSlider" class="flex gap-2 overflow-x-auto scroll-smooth no-scrollbar snap-x snap-mandatory rounded-xl">
                             
                             <!-- Image 1: 1200x450PNS_Spin.jpg -->
@@ -625,113 +672,35 @@
                         </button>
                     </div>
 
-                    <!-- Single Landscape Video (16:9) -->
-                    <div class="mt-3 pt-2 border-t border-beige-border/60">
+                    <div class="flex-none mt-3 pt-2 border-t border-beige-border/60">
                         <div class="aspect-video w-full rounded-xl overflow-hidden border border-beige-border shadow-xs bg-black/5">
                             <video src="PAYDAY(Ngang)_5mb.mp4" controls autoplay loop muted playsinline class="w-full h-full object-cover rounded-xl"></video>
                         </div>
                     </div>
                 </div>
 
-                <!-- Department 5: RETAIL MKT -->
-                <div class="bg-white rounded-2xl p-5 sm:p-6 shadow-soft-card border border-beige-border hover:border-gold/60 transition-all flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center gap-3 mb-4 pb-3 border-b border-beige-border">
-                            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-gold text-white flex items-center justify-center font-bold shadow-sm shrink-0">
-                                <i class="fa-solid fa-store text-base sm:text-lg"></i>
-                            </div>
-                            <h3 class="font-sans font-bold text-navy text-base sm:text-lg tracking-wide">RETAIL MKT</h3>
-                        </div>
-                        <div class="space-y-2.5 text-xs sm:text-sm text-slate-700 min-h-[120px] sm:min-h-[140px]">
-                            <p class="font-semibold text-slate-800">ADAPT CÁC HẠNG MỤC CT TRANG SỨC THÁNG 7</p>
-                            <ul class="space-y-1.5 list-disc list-inside text-slate-600 leading-relaxed">
-                                <li>Adapt KV từ chương trình hệ thống</li>
-                                <li>Adapt KV CT TS Tháng 7 từ sub-brand</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- 5 Horizontal Banner Slider for RETAIL MKT -->
-                    <div class="relative group mt-4 pt-3 bg-beige-subtle/80 rounded-2xl p-2 border border-beige-border overflow-hidden shadow-inner">
-                        <div id="retailMktSlider" class="flex gap-2 overflow-x-auto scroll-smooth no-scrollbar snap-x snap-mandatory rounded-xl">
-                            <!-- Image 1: CTTS T7 & Retail -->
-                            <div class="snap-center shrink-0 w-full aspect-[1200/628] rounded-xl overflow-hidden border border-beige-border/60 shadow-xs bg-white">
-                                <img src="1200 x 628 KPN CTT& Retail.png" alt="1200 x 628 KPN CTT& Retail" class="w-full h-full object-cover" onerror="this.src='1200 x 628 KPN CTT& Retail.jpg';">
-                            </div>
-                            <!-- Image 2: Disney -->
-                            <div class="snap-center shrink-0 w-full aspect-[1200/628] rounded-xl overflow-hidden border border-beige-border/60 shadow-xs bg-white">
-                                <img src="1200x628_Disney.png" alt="1200x628_Disney" class="w-full h-full object-cover" onerror="this.src='1200x628_Disney.jpg';">
-                            </div>
-                            <!-- Image 3: MANCODE -->
-                            <div class="snap-center shrink-0 w-full aspect-[1200/628] rounded-xl overflow-hidden border border-beige-border/60 shadow-xs bg-white">
-                                <img src="1200 x 628_MANCODE.png" alt="1200 x 628_MANCODE" class="w-full h-full object-cover" onerror="this.src='1200 x 628_MANCODE.jpg';">
-                            </div>
-                            <!-- Image 4: ARTA -->
-                            <div class="snap-center shrink-0 w-full aspect-[1200/628] rounded-xl overflow-hidden border border-beige-border/60 shadow-xs bg-white">
-                                <img src="1200 x 628_arta.png" alt="1200 x 628_arta" class="w-full h-full object-cover" onerror="this.src='1200 x 628_arta.jpg';">
-                            </div>
-                            <!-- Image 5: STYLE -->
-                            <div class="snap-center shrink-0 w-full aspect-[1200/628] rounded-xl overflow-hidden border border-beige-border/60 shadow-xs bg-white">
-                                <img src="1200 x 628_Style.png" alt="1200 x 628_Style" class="w-full h-full object-cover" onerror="this.src='1200 x 628_Style.jpg';">
-                            </div>
-                        </div>
-
-                        <!-- Left Arrow Button -->
-                        <button onclick="slideCarousel('retailMktSlider', 'left')" aria-label="Previous Slide" class="absolute left-3 top-1/2 -translate-y-1/2 bg-navy/85 hover:bg-navy text-white w-8 h-8 rounded-full flex items-center justify-center shadow-md backdrop-blur-sm transition-all duration-200 hover:scale-110 active:scale-95 z-10">
-                            <i class="fa-solid fa-chevron-left text-xs"></i>
-                        </button>
-                        <!-- Right Arrow Button -->
-                        <button onclick="slideCarousel('retailMktSlider', 'right')" aria-label="Next Slide" class="absolute right-3 top-1/2 -translate-y-1/2 bg-navy/85 hover:bg-navy text-white w-8 h-8 rounded-full flex items-center justify-center shadow-md backdrop-blur-sm transition-all duration-200 hover:scale-110 active:scale-95 z-10">
-                            <i class="fa-solid fa-chevron-right text-xs"></i>
-                        </button>
-                    </div>
-
-                    <!-- Single Landscape Video (16:9) -->
-                    <div class="mt-3 pt-2 border-t border-beige-border/60">
-                        <div class="aspect-video w-full rounded-xl overflow-hidden border border-beige-border shadow-xs bg-black/5">
-                            <video src="RETAILL MKT Sub brand_15.mp4" controls autoplay loop muted playsinline class="w-full h-full object-cover rounded-xl"></video>
-                        </div>
-                    </div>
-                </div>
-            
-
-                <!-- Department 6: CX-CS -->
-                <div class="bg-white rounded-2xl p-5 sm:p-6 shadow-soft-card border border-beige-border hover:border-gold/60 transition-all flex flex-col justify-between">
-                    <div>
+                <!-- Department 6: CLHH -->
+                <div class="bg-white rounded-2xl p-5 sm:p-6 shadow-soft-card border border-beige-border hover:border-gold/60 transition-all flex flex-col justify-between h-full">
+                    <div class="flex-none">
                         <div class="flex items-center gap-3 mb-4 pb-3 border-b border-beige-border">
                             <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-crimson text-white flex items-center justify-center font-bold shadow-sm shrink-0">
-                                <i class="fa-solid fa-heart text-base sm:text-lg"></i>
+                                <i class="fa-solid fa-award text-base sm:text-lg"></i>
                             </div>
-                            <h3 class="font-sans font-bold text-navy text-base sm:text-lg tracking-wide">CX - CS</h3>
+                            <h3 class="font-sans font-bold text-navy text-base sm:text-lg tracking-wide">CLHH</h3>
                         </div>
                         <div class="space-y-2.5 text-xs sm:text-sm text-slate-700 min-h-[120px] sm:min-h-[140px]">
-                            <p class="font-semibold text-crimson uppercase">Các chương trình & Thông báo chính sách:</p>
+                            <p class="font-semibold text-slate-800 uppercase">THIẾT KẾ VÀ SẢN XUẤT CÁC HẠNG MỤC:</p>
                             <ul class="space-y-1.5 list-disc list-inside text-slate-600 leading-relaxed">
-                                <li>Chương trình Tiếp sức mùa cao điểm</li>
-                                <li>Thông báo Phương án xử lý giao dịch mua lại / thu đổi</li>
+                                <li>E - BROCHURE Chương Trình YOUTH CAMPAIGN (in process)</li>
+                                <li>SẢN XUẤT VIDEO ONSITE (Air 91 sku, 92 sku in process)</li>
                             </ul>
                         </div>
                     </div>
-                    <!-- Carousel Slider for CXCS (Set quà & Thông báo thu đổi) - Căn chiều cao đồng bộ với RETAIL MKT -->
-                    <div class="relative group mt-4 pt-3 bg-beige-subtle/80 rounded-2xl p-2 border border-beige-border overflow-hidden shadow-inner">
-                        <div id="cxcsSlider" class="flex gap-2 overflow-x-auto scroll-smooth no-scrollbar snap-x snap-mandatory rounded-xl h-[330px] sm:h-[370px]">
-                            <!-- Image 1: CXCS Set Quà -->
-                            <div class="snap-center shrink-0 w-full h-full rounded-xl overflow-hidden border border-beige-border/60 shadow-xs bg-white flex items-center justify-center">
-                                <img src="CXCS.jpg" alt="Bộ Set quà tiếp sức mùa cao điểm CXCS" class="w-full h-full object-contain" onerror="this.src='CXCS.png';">
-                            </div>
-                            <!-- Image 2: QT thu doi (Tối ưu hiển thị vừa vặn chiều cao) -->
-                            <div class="snap-center shrink-0 w-full h-full rounded-xl overflow-hidden border border-beige-border/60 shadow-xs bg-white flex items-center justify-center">
-                                <img src="QT thu doi.jpg" alt="Thông báo phương án xử lý giao dịch mua lại" class="w-full h-full object-contain" onerror="this.src='QT thu doi.png';">
-                            </div>
+                    
+                    <div class="flex-1 mt-4 pt-3 bg-beige-subtle/80 rounded-2xl p-2 border border-beige-border shadow-inner flex flex-col justify-center">
+                        <div class="h-[380px] sm:h-[420px] overflow-y-auto w-full rounded-xl border border-beige-border/60 bg-white">
+                            <img src="E catalog.png" alt="E-Brochure Catalog CLHH" class="w-full h-auto block" onerror="this.src='E catalog.jpg';">
                         </div>
-
-                        <!-- Left Arrow Button -->
-                        <button onclick="slideCarousel('cxcsSlider', 'left')" aria-label="Previous Slide" class="absolute left-3 top-1/2 -translate-y-1/2 bg-navy/85 hover:bg-navy text-white w-8 h-8 rounded-full flex items-center justify-center shadow-md backdrop-blur-sm transition-all duration-200 hover:scale-110 active:scale-95 z-10">
-                            <i class="fa-solid fa-chevron-left text-xs"></i>
-                        </button>
-                        <!-- Right Arrow Button -->
-                        <button onclick="slideCarousel('cxcsSlider', 'right')" aria-label="Next Slide" class="absolute right-3 top-1/2 -translate-y-1/2 bg-navy/85 hover:bg-navy text-white w-8 h-8 rounded-full flex items-center justify-center shadow-md backdrop-blur-sm transition-all duration-200 hover:scale-110 active:scale-95 z-10">
-                            <i class="fa-solid fa-chevron-right text-xs"></i>
-                        </button>
                     </div>
                 </div>
 
@@ -1027,45 +996,11 @@
 
             <!-- Content Role Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 font-sans">
-                <div class="bg-white rounded-2xl p-5 sm:p-6 shadow-soft-card border border-beige-border">
-                    <div class="flex items-center gap-3 mb-4 pb-3 border-b border-beige-border">
-                        <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-navy text-white flex items-center justify-center font-bold shrink-0">
-                            <i class="fa-solid fa-bullseye"></i>
-                        </div>
-                        <h3 class="font-bold text-navy text-base sm:text-lg">OMNI</h3>
-                    </div>
-                    <div class="p-5 sm:p-6 text-center border border-dashed border-beige-border bg-beige-subtle/50 rounded-xl">
-                        <span class="text-xs text-slate-500 font-medium italic">[Nội dung hỗ trợ truyền thông Omni-MKT sẽ điền sau]</span>
-                    </div>
-                </div>
-
+                
+                <!-- RETAIL MKT -->
                 <div class="bg-white rounded-2xl p-5 sm:p-6 shadow-soft-card border border-beige-border">
                     <div class="flex items-center gap-3 mb-4 pb-3 border-b border-beige-border">
                         <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-gold text-white flex items-center justify-center font-bold shrink-0">
-                            <i class="fa-solid fa-users"></i>
-                        </div>
-                        <h3 class="font-bold text-navy text-base sm:text-lg">KHCS</h3>
-                    </div>
-                    <div class="p-5 sm:p-6 text-center border border-dashed border-beige-border bg-beige-subtle/50 rounded-xl">
-                        <span class="text-xs text-slate-500 font-medium italic">[Nội dung hỗ trợ truyền thông KHCS sẽ điền sau]</span>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-2xl p-5 sm:p-6 shadow-soft-card border border-beige-border">
-                    <div class="flex items-center gap-3 mb-4 pb-3 border-b border-beige-border">
-                        <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-crimson text-white flex items-center justify-center font-bold shrink-0">
-                            <i class="fa-solid fa-gem"></i>
-                        </div>
-                        <h3 class="font-bold text-navy text-base sm:text-lg">PNS</h3>
-                    </div>
-                    <div class="p-5 sm:p-6 text-center border border-dashed border-beige-border bg-beige-subtle/50 rounded-xl">
-                        <span class="text-xs text-slate-500 font-medium italic">[Nội dung hỗ trợ truyền thông PNS sẽ điền sau]</span>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-2xl p-5 sm:p-6 shadow-soft-card border border-beige-border">
-                    <div class="flex items-center gap-3 mb-4 pb-3 border-b border-beige-border">
-                        <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-navy text-white flex items-center justify-center font-bold shrink-0">
                             <i class="fa-solid fa-store"></i>
                         </div>
                         <h3 class="font-bold text-navy text-base sm:text-lg">RETAIL MKT</h3>
@@ -1075,18 +1010,20 @@
                     </div>
                 </div>
 
+                <!-- TTQT -->
                 <div class="bg-white rounded-2xl p-5 sm:p-6 shadow-soft-card border border-beige-border">
                     <div class="flex items-center gap-3 mb-4 pb-3 border-b border-beige-border">
-                        <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-gold text-white flex items-center justify-center font-bold shrink-0">
-                            <i class="fa-solid fa-award"></i>
+                        <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-navy text-white flex items-center justify-center font-bold shrink-0">
+                            <i class="fa-solid fa-users"></i>
                         </div>
-                        <h3 class="font-bold text-navy text-base sm:text-lg">CLHH</h3>
+                        <h3 class="font-bold text-navy text-base sm:text-lg">TTQT</h3>
                     </div>
                     <div class="p-5 sm:p-6 text-center border border-dashed border-beige-border bg-beige-subtle/50 rounded-xl">
-                        <span class="text-xs text-slate-500 font-medium italic">[Nội dung hỗ trợ truyền thông CLHH sẽ điền sau]</span>
+                        <span class="text-xs text-slate-500 font-medium italic">[Nội dung hỗ trợ truyền thông TTQT sẽ điền sau]</span>
                     </div>
                 </div>
 
+                <!-- CX - CS -->
                 <div class="bg-white rounded-2xl p-5 sm:p-6 shadow-soft-card border border-beige-border">
                     <div class="flex items-center gap-3 mb-4 pb-3 border-b border-beige-border">
                         <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-crimson text-white flex items-center justify-center font-bold shrink-0">
@@ -1098,6 +1035,46 @@
                         <span class="text-xs text-slate-500 font-medium italic">[Nội dung hỗ trợ truyền thông CX-CS sẽ điền sau]</span>
                     </div>
                 </div>
+
+                <!-- OMNI -->
+                <div class="bg-white rounded-2xl p-5 sm:p-6 shadow-soft-card border border-beige-border">
+                    <div class="flex items-center gap-3 mb-4 pb-3 border-b border-beige-border">
+                        <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-gold text-white flex items-center justify-center font-bold shrink-0">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+                        <h3 class="font-bold text-navy text-base sm:text-lg">OMNI</h3>
+                    </div>
+                    <div class="p-5 sm:p-6 text-center border border-dashed border-beige-border bg-beige-subtle/50 rounded-xl">
+                        <span class="text-xs text-slate-500 font-medium italic">[Nội dung hỗ trợ truyền thông Omni-MKT sẽ điền sau]</span>
+                    </div>
+                </div>
+
+                <!-- PNS -->
+                <div class="bg-white rounded-2xl p-5 sm:p-6 shadow-soft-card border border-beige-border">
+                    <div class="flex items-center gap-3 mb-4 pb-3 border-b border-beige-border">
+                        <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-navy text-white flex items-center justify-center font-bold shrink-0">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                        <h3 class="font-bold text-navy text-base sm:text-lg">PNS</h3>
+                    </div>
+                    <div class="p-5 sm:p-6 text-center border border-dashed border-beige-border bg-beige-subtle/50 rounded-xl">
+                        <span class="text-xs text-slate-500 font-medium italic">[Nội dung hỗ trợ truyền thông PNS sẽ điền sau]</span>
+                    </div>
+                </div>
+
+                <!-- CLHH -->
+                <div class="bg-white rounded-2xl p-5 sm:p-6 shadow-soft-card border border-beige-border">
+                    <div class="flex items-center gap-3 mb-4 pb-3 border-b border-beige-border">
+                        <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-crimson text-white flex items-center justify-center font-bold shrink-0">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <h3 class="font-bold text-navy text-base sm:text-lg">CLHH</h3>
+                    </div>
+                    <div class="p-5 sm:p-6 text-center border border-dashed border-beige-border bg-beige-subtle/50 rounded-xl">
+                        <span class="text-xs text-slate-500 font-medium italic">[Nội dung hỗ trợ truyền thông CLHH sẽ điền sau]</span>
+                    </div>
+                </div>
+
             </div>
         </div>
 
