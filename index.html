@@ -442,7 +442,7 @@
                         </div>
                     </div>
                     
-                    <!-- Tầng hình ảnh (slider): Tự động scale theo chiều cao ảnh import vào -->
+                    <!-- Tầng hình ảnh (slider) -->
                     <div class="relative group mt-4 pt-3 bg-beige-subtle/80 rounded-2xl p-2 border border-beige-border overflow-hidden shadow-inner flex flex-col justify-center min-h-[220px] sm:min-h-[240px]">
                         <div id="retailMktSlider" class="flex gap-2 overflow-x-auto scroll-smooth no-scrollbar snap-x snap-mandatory rounded-xl items-center">
                             <!-- Slide 1: Mancode & Arta -->
@@ -476,7 +476,7 @@
                         </button>
                     </div>
 
-                    <!-- Tầng video: Đổi sang object-contain với khung nền trắng fit chiều ngang, không bị che/cắt -->
+                    <!-- Tầng video -->
                     <div class="flex-none mt-3 pt-2 border-t border-beige-border/60">
                         <div class="aspect-[16/9] sm:aspect-[16/10] w-full rounded-xl overflow-hidden border border-beige-border shadow-xs bg-white flex items-center justify-center p-1">
                             <video src="U35 (vuong) 16mb.mp4" controls autoplay loop muted playsinline class="w-full h-full object-contain rounded-xl"></video>
@@ -484,7 +484,7 @@
                     </div>
                 </div>
 
-                <!-- Department 2: TT KDQT -->
+                <!-- Department 2: TT KDQT (Extended image section to fill video space) -->
                 <div class="bg-white rounded-2xl p-5 sm:p-6 shadow-soft-card border border-beige-border hover:border-gold/60 transition-all flex flex-col justify-between h-full">
                     <div class="flex-none">
                         <div class="flex items-center gap-3 mb-4 pb-3 border-b border-beige-border">
@@ -502,8 +502,9 @@
                         </div>
                     </div>
 
-                    <div class="flex-1 relative group mt-4 pt-3 bg-beige-subtle/80 rounded-2xl p-2 border border-beige-border overflow-hidden shadow-inner flex flex-col justify-center">
-                        <div id="khcsSlider" class="flex gap-2 overflow-x-auto scroll-smooth no-scrollbar snap-x snap-mandatory rounded-xl h-full min-h-[220px] sm:min-h-[240px]">
+                    <!-- Tầng hình ảnh TT KDQT mở rộng chiều cao (h-[310px] sm:h-[330px]) lắp đầy chỗ trống -->
+                    <div class="flex-1 relative group mt-4 pt-3 bg-beige-subtle/80 rounded-2xl p-2 border border-beige-border overflow-hidden shadow-inner flex flex-col justify-center h-[310px] sm:h-[330px]">
+                        <div id="khcsSlider" class="flex gap-2 overflow-x-auto scroll-smooth no-scrollbar snap-x snap-mandatory rounded-xl h-full items-center">
                             <!-- Slide 1 -->
                             <div class="snap-center shrink-0 w-full h-full rounded-xl overflow-hidden border border-beige-border/60 shadow-xs bg-white flex items-center justify-center p-1">
                                 <img src="DN KV-MAster.png" alt="DN KV Master" class="w-full h-full object-contain object-center" onerror="this.src='DN KV-MAster.png';">
@@ -531,14 +532,9 @@
                             <i class="fa-solid fa-chevron-right text-xs"></i>
                         </button>
                     </div>
-
-                    <!-- Phần đệm cân bằng chiều cao tương ứng với block video ở card RETAIL MKT -->
-                    <div class="flex-none mt-3 pt-2 border-t border-beige-border/60 opacity-0 pointer-events-none hidden sm:block">
-                        <div class="aspect-[16/9] sm:aspect-[16/10] w-full"></div>
-                    </div>
                 </div>
 
-                <!-- Department 3: CX-CS -->
+                <!-- Department 3: CX-CS (Extended image section to fill video space) -->
                 <div class="bg-white rounded-2xl p-5 sm:p-6 shadow-soft-card border border-beige-border hover:border-gold/60 transition-all flex flex-col justify-between h-full">
                     <div class="flex-none">
                         <div class="flex items-center gap-3 mb-4 pb-3 border-b border-beige-border">
@@ -553,26 +549,22 @@
                         </div>
                     </div>
                     
-                    <div class="flex-1 mt-4 pt-3 bg-beige-subtle/80 rounded-2xl p-2 border border-beige-border shadow-inner flex flex-col gap-2 justify-center min-h-[220px] sm:min-h-[240px]">
-                        <!-- Image 1: Popup Camon (Thu nhỏ còn 1/2) -->
-                        <div class="h-[55px] sm:h-[65px] w-full rounded-xl overflow-hidden border border-beige-border/60 shadow-xs bg-white flex items-center justify-center p-1 shrink-0">
+                    <!-- Tầng hình ảnh CX-CS mở rộng chiều cao (h-[310px] sm:h-[330px]) lắp đầy chỗ trống -->
+                    <div class="flex-1 mt-4 pt-3 bg-beige-subtle/80 rounded-2xl p-2 border border-beige-border shadow-inner flex flex-col gap-2 justify-center h-[310px] sm:h-[330px]">
+                        <!-- Image 1: Popup Camon -->
+                        <div class="h-[75px] sm:h-[85px] w-full rounded-xl overflow-hidden border border-beige-border/60 shadow-xs bg-white flex items-center justify-center p-1 shrink-0">
                             <img src="popup-camon.jpg" alt="Popup Camon" class="w-full h-full object-contain object-center" onerror="this.src='popup-camon.png';">
                         </div>
 
-                        <!-- Image 2: Zalo Goodnews (Giảm chiều cao để fit) -->
-                        <div class="h-[70px] sm:h-[80px] w-full rounded-xl overflow-hidden border border-beige-border/60 shadow-xs bg-white flex items-center justify-center p-1 shrink-0">
+                        <!-- Image 2: Zalo Goodnews -->
+                        <div class="h-[90px] sm:h-[100px] w-full rounded-xl overflow-hidden border border-beige-border/60 shadow-xs bg-white flex items-center justify-center p-1 shrink-0">
                             <img src="zalo goodnews.jpg" alt="Zalo Goodnews" class="w-full h-full object-contain object-center" onerror="this.src='zalo goodnews.png';">
                         </div>
                         
-                        <!-- Image 3: Thư cảm ơn (Giữ nguyên kích thước đầy đủ) -->
+                        <!-- Image 3: Thư cảm ơn -->
                         <div class="flex-1 w-full rounded-xl overflow-hidden border border-beige-border/60 shadow-xs bg-white flex items-center justify-center p-1">
                             <img src="thucamon 2.png" alt="Thư cảm ơn 2" class="w-full h-full object-contain object-center" onerror="this.src='thucamon 2.png';">
                         </div>
-                    </div>
-
-                    <!-- Phần đệm cân bằng chiều cao tương ứng với block video ở card RETAIL MKT -->
-                    <div class="flex-none mt-3 pt-2 border-t border-beige-border/60 opacity-0 pointer-events-none hidden sm:block">
-                        <div class="aspect-[16/9] sm:aspect-[16/10] w-full"></div>
                     </div>
                 </div>
 
@@ -596,7 +588,7 @@
                         </div>
                     </div>
 
-                    <!-- Tầng hình ảnh OMNI (Cố định chiều cao khớp với PNS) -->
+                    <!-- Tầng hình ảnh OMNI -->
                     <div class="relative group mt-4 pt-3 bg-beige-subtle/80 rounded-2xl p-2 border border-beige-border overflow-hidden shadow-inner flex flex-col justify-center h-[260px] sm:h-[280px]">
                         <div id="omniMktSlider" class="flex gap-2 overflow-x-auto scroll-smooth no-scrollbar snap-x snap-mandatory rounded-xl h-full items-center">
                             <div class="snap-center shrink-0 w-full h-full rounded-xl overflow-hidden border border-beige-border/60 shadow-xs bg-white flex items-center justify-center">
@@ -659,7 +651,7 @@
                         </div>
                     </div>
                     
-                    <!-- Tầng hình ảnh PNS (Cố định chiều cao khớp với OMNI) -->
+                    <!-- Tầng hình ảnh PNS -->
                     <div class="relative group mt-4 pt-3 bg-beige-subtle/80 rounded-2xl p-2 border border-beige-border overflow-hidden shadow-inner flex flex-col justify-center h-[260px] sm:h-[280px]">
                         <div id="pnsSlider" class="flex gap-2 overflow-x-auto scroll-smooth no-scrollbar snap-x snap-mandatory rounded-xl h-full items-center">
                             
@@ -701,7 +693,7 @@
                     </div>
                 </div>
 
-                <!-- Department 6: CLHH (Extended image section to fill video space) -->
+                <!-- Department 6: CLHH -->
                 <div class="bg-white rounded-2xl p-5 sm:p-6 shadow-soft-card border border-beige-border hover:border-gold/60 transition-all flex flex-col justify-between h-full">
                     <div class="flex-none">
                         <div class="flex items-center gap-3 mb-4 pb-3 border-b border-beige-border">
@@ -719,7 +711,6 @@
                         </div>
                     </div>
                     
-                    <!-- Tầng hình ảnh CLHH được mở rộng chiều cao (h-[370px] sm:h-[400px]) để lắp đầy không gian tầng video của các card khác -->
                     <div class="flex-1 mt-4 pt-3 bg-beige-subtle/80 rounded-2xl p-2 border border-beige-border shadow-inner flex flex-col justify-center h-[370px] sm:h-[400px]">
                         <div class="h-full overflow-y-auto w-full rounded-xl border border-beige-border/60 bg-white flex items-center justify-center p-1">
                             <img src="E catalog.png" alt="E-Brochure Catalog CLHH" class="w-full h-full object-contain block mx-auto" onerror="this.src='E catalog.jpg';">
