@@ -424,7 +424,7 @@
             <!-- Grid 6 Phòng Ban -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 font-sans">
 
-                <!-- Department 1: RETAIL MKT (Đã điều chỉnh chiều cao slider hình ảnh khớp card TT KDQT / CX-CS và bỏ line chia cắt, zoom to video cover lấp đầy khoảng trống) -->
+                <!-- Department 1: RETAIL MKT (Slider hình thu gọn vừa vặn với kích thước ảnh, video 1:1 full size không cắt) -->
                 <div class="bg-white rounded-2xl p-5 sm:p-6 shadow-soft-card border border-beige-border hover:border-gold/60 transition-all flex flex-col justify-between h-full">
                     <div class="flex-none">
                         <div class="flex items-center gap-3 mb-4 pb-3 border-b border-beige-border">
@@ -442,8 +442,8 @@
                         </div>
                     </div>
                     
-                    <!-- Tầng hình ảnh (slider) tăng chiều cao khớp TT KDQT & CX-CS -->
-                    <div class="relative group mt-4 pt-3 bg-beige-subtle/80 rounded-2xl p-2 border border-beige-border overflow-hidden shadow-inner flex flex-col justify-center h-[310px] sm:h-[330px]">
+                    <!-- Tầng hình ảnh (slider) thu gọn fit với chiều cao hình thực tế -->
+                    <div class="relative group mt-4 pt-3 bg-beige-subtle/80 rounded-2xl p-2 border border-beige-border overflow-hidden shadow-inner flex flex-col justify-center h-[215px] sm:h-[235px]">
                         <div id="retailMktSlider" class="flex gap-2 overflow-x-auto scroll-smooth no-scrollbar snap-x snap-mandatory rounded-xl h-full items-center">
                             <!-- Slide 1: Mancode & Arta -->
                             <div class="snap-center shrink-0 w-full h-full flex gap-2">
@@ -476,10 +476,10 @@
                         </button>
                     </div>
 
-                    <!-- Tầng video zoom to cover (đã xóa line ngang chia cắt phía trên) -->
+                    <!-- Tầng video 1:1 full size không cắt -->
                     <div class="flex-none mt-3">
-                        <div class="aspect-[16/8] sm:aspect-[16/8.5] w-full rounded-xl overflow-hidden border border-beige-border shadow-xs bg-white flex items-center justify-center p-0">
-                            <video src="U35 (vuong) 16mb.mp4" controls autoplay loop muted playsinline class="w-full h-full object-cover rounded-xl"></video>
+                        <div class="aspect-square w-full rounded-xl overflow-hidden border border-beige-border shadow-xs bg-white flex items-center justify-center p-0">
+                            <video src="U35 (vuong) 16mb.mp4" controls autoplay loop muted playsinline class="w-full h-full object-contain rounded-xl"></video>
                         </div>
                     </div>
                 </div>
@@ -587,7 +587,7 @@
                     <div class="relative group mt-4 pt-3 bg-beige-subtle/80 rounded-2xl p-2 border border-beige-border overflow-hidden shadow-inner flex flex-col justify-center h-[260px] sm:h-[280px]">
                         <div id="omniMktSlider" class="flex gap-2 overflow-x-auto scroll-smooth no-scrollbar snap-x snap-mandatory rounded-xl h-full items-center">
                             <div class="snap-center shrink-0 w-full h-full rounded-xl overflow-hidden border border-beige-border/60 shadow-xs bg-white flex items-center justify-center">
-                                <img src="T9 1200x450 (KPN).jpg" alt="T9 1200x450 (KPN)" class="w-full h-full object-contain" onerror="this.src='T9 1200x450 (KPN).png';">
+                                <img src="T9 1200x450 (KPN).png" alt="T9 1200x450 (KPN)" class="w-full h-full object-contain" onerror="this.src='T9 1200x450 (KPN).png';">
                             </div>
                             <div class="snap-center shrink-0 w-full h-full rounded-xl overflow-hidden border border-beige-border/60 shadow-xs bg-white flex items-center justify-center">
                                 <img src="ts-ECZ.jpg" alt="ts-ECZ" class="w-full h-full object-contain" onerror="this.src='ts-ECZ.jpg';">
